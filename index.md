@@ -14,7 +14,44 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
 ### Single speaker
 |Recording|Universal MelGAN|FB-MelGAN|WaveRNN|WaveGlow|WaveNet|
 |---------|----------------|---------|-------|--------|-------|
-|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|
+
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Recording</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td> 
+                <audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>
+            </td>
+            <td> 
+                <audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>
+            </td>
+            <td> 
+                <audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>
+            </td>
+            <td> 
+                <audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>
+            </td>
+            <td> 
+                <audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>
+            </td>
+            <td> 
+                <audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>
+            </td>
+            <td> 
+                <audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 
 # English samples
