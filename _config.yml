@@ -1,4 +1,6 @@
 theme: jekyll-theme-cayman
 layout: default
 title: "Universal MelGAN: Improved Domain Robustness and High-Fidelity Neural Vocoder with Multi-Resolution Spectrogram Discriminators"
-description: Won Jang, Jaesam Yoon, Dan Lim
+description: Won Jang$^1$, Jaesam Yoon$^1$, Dan Lim$^2$
+address1: $^1$Kakao Enterprise Corp., Seongnam, Korea
+address2: $^2$Kakao Corp., Seongnam, Korea
