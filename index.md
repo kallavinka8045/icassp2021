@@ -1,5 +1,5 @@
-![Image](figure1.png =500x)
-![Image](figure2.png =500x)
+![Image](figure1.png){ width=70% }
+![Image](figure2.png){ width=70% }
 
 
 ## Welcome to GitHub Page
