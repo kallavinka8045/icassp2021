@@ -14,21 +14,10 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
 ### Single speaker
 Internal dataset
 
-<tr>
-  <th width="192">Recording</th>
-  <th width="192">Universal MelGAN</th>
-  <th width="192">FB-MelGAN</th>
-  <th width="192">WaveRNN</th>
-  <th width="192">WaveGlow</th>
-  <th width="192">WaveNet</th>
-<tr>
-  <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
-  <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
-  <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
-  <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
-  <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
-  <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
-</tr>
+|Recording|Universal MelGAN|FB-MelGAN|WaveRNN|WaveGlow|WaveNet|
+|---------|----------------|---------|-------|--------|-------|
+|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|테스트|테슷트|테스트|세슷트|테스트|
+
 
 ### Multiple speakers
 
