@@ -25,6 +25,10 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
 
 ## Text-to-speech
 
+### Large dataset
+
+### Small dataset
+
 
 # English samples
 
