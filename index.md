@@ -25,6 +25,7 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
 
 ## Text-to-speech
 
+
 # English samples
 
 ## Seen speakers scenarios
@@ -43,8 +44,10 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
 
 ## Text-to-speech
 
-# Bonus
+# Additional study
 
+## Korean TTS samples: Multi-band + AMP
+(achieved 0.003 RTF on NVIDIA V100 GPU)
 
 ## Welcome to GitHub Page
 
