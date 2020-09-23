@@ -1,7 +1,6 @@
 ![Image](figure1.png){: width="80%"}{: .center}
 
-## Table of contents
-* TOC
+## Table of contents{:.no_toc}
 {:toc}
 
 ## Abstract
