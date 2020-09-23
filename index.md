@@ -57,6 +57,237 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
     </tbody>
 </table>
 
+### Multiple speakers
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Recording</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
+
+## Unseen speakers and out-of-domain scenarios
+
+### Clean, noisy and reverberant
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Recording</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
+
+### Expressive
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Recording</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
+
+### Unseen languages
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Recording</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
+
+## Text-to-speech
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Recording</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td> 
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
 
 # English samples
 
