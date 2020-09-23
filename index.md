@@ -1,5 +1,5 @@
-![Image]("figure1.png")
-![Image]("figure2.png")
+![Image](figure1.png)
+![Image](figure2.png)
 
 
 ## Welcome to GitHub Page
