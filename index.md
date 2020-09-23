@@ -1,80 +1,3 @@
-<head>
-  <meta charset="UTF-8">
-  <script>
-    function play(path, div) {{
-      cells = document.getElementsByClassName('round-button')
-        for(let i=0; i<cells.length; i++) {
-            console.log(cells.item(i));
-            cells.item(i).style.color = "black";
-        }
-      div.style.color = "red";
-      var player = document.getElementById('player');
-      player.src = path;
-      player.play();
-    }}
-  </script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-<style>
-.audio-cell {
-  /* Center audio widgets in the table cell. */
-  text-align: center;
-  padding-bottom: 1px;
-  padding-top: 1px;
-}
-.audio-cell-padded { 
-  text-align: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-.audio-header {
-  text-align: left;
-  /* Don't wrap header text. */
-  white-space: nowrap;
-  /* Some breaking space between headers for readability. */   
-  padding-right: 5px; 
-  padding-left: 5px; 
-}
-.reference-cell {
-  /* For uniformity and to wrap long reference text, limit the reference cell's width. */
-  width: 25%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.sample audio {
-  vertical-align: middle;
-  padding-left: 3px;
-  padding-right: 3px;
-}
-
-.round-button {
-  box-sizing: border-box;
-  display:block;
-  width:30px;
-  height:30px;
-  padding-top: 8px;
-  padding-left: 3px;
-  line-height: 6px;
-  border: 1.2px solid #000;
-  border-radius: 50%;
-  color: #000;
-  text-align:center;
-  background-color: rgba(0,0,0,0.00);
-  font-size:6px;
-  box-shadow: 0px 0px 2px rgba(0,0,0,1);
-  transition: all 0.2s ease;
-}
-.round-button:hover {
-  background-color: rgba(0,0,0,0.0);
-  box-shadow: 0px 0px 4px rgba(0,0,0,1);
-}
-.round-button:active {
-  background-color: rgba(0,0,0,0.01);
-  box-shadow: 0px 0px 1px rgba(0,0,0,1);
-}
-</style>
-</head>
-
-
 # Table of contents
 {:.no_toc}
 * toc
@@ -135,6 +58,14 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
 You can use the [editor on GitHub](https://github.com/kallavinka8045/icassp2021/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+<body>
+ <audio id="player" src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav"></audio>
+<div>
+    <button onclick="document.getElementById('player').play()">Play</button>
+    <button onclick="document.getElementById('player').pause()">Pause</button>
+    <button onclick="document.getElementById('player').muted=!document.getElementById('player').muted">Mute/ Unmute</button>
+</div>
 
 <tr>
   <td><audio controls ><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio></td>
