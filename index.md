@@ -15,14 +15,6 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
 |Recording|Universal MelGAN|FB-MelGAN|WaveRNN|WaveGlow|WaveNet|
 |---------|----------------|---------|-------|--------|-------|
 |<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|
-|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|
-|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|<audio controls style="width: 150px;"><source src="wav_for_mos/eng/wavernn/eng_seen_single/LJ021-0045.wav" type="audio/wav"></audio>|
-
-|Index|Recording|Universal MelGAN|FB-MelGAN|WaveRNN|WaveGlow|WaveNet|
-|-----|---------|----------------|---------|-------|--------|-------|
-|#1|a|b|c|d|e|f|
-|#2|a|b|c|d|e|f|
-|#3|a|b|c|d|e|f|
 
 
 # English samples
