@@ -1,6 +1,6 @@
 ![Image](figure1.png){: width="80%"}{: .center}
 
-## Table of contents{:.no_toc}
+## Table of contents
 *toc
 {:toc}
 
