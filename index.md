@@ -17,11 +17,12 @@ Internal dataset
 <table>
 <thead>
 <tr>
-  <th width="192">GT Mel</th>
-  <th width="192">Tacotron2</th>
-  <th width="192">Transformer</th>
-  <th width="192">FastSpeech</th>
-  <th width="192">JDI-T</th>
+  <th width="192">Recording</th>
+  <th width="192">Universal MelGAN</th>
+  <th width="192">FB-MelGAN</th>
+  <th width="192">WaveRNN</th>
+  <th width="192">WaveGlow</th>
+  <th width="192">WaveNet</th>
 </thead>
 <tbody>
 <tr>
