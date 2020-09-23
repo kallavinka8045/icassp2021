@@ -2,7 +2,7 @@
 
 ## Table of contents
 {:.no_toc}
-*toc
+* toc
 {:toc}
 
 ## Abstract
