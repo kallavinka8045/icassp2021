@@ -1,5 +1,4 @@
 ![Image](figure1.png){: width="70%"}{: .center}
-![Image](figure2.png){: width="70%"}{: .center}
 
 
 ## Welcome to GitHub Page
