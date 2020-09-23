@@ -1,5 +1,7 @@
-![Image](figure1.png){: width="70%"}{: .center}
+![Image](figure1.png){: width="80%"}{: .center}
 
+# Table of contents
+[TOC]
 
 ## Welcome to GitHub Page
 
