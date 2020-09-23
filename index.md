@@ -1,5 +1,5 @@
-![Image](figure1.png)
-![Image](figure2.png)
+![Image](figure1.png =500x)
+![Image](figure2.png =500x)
 
 
 ## Welcome to GitHub Page
