@@ -1,5 +1,5 @@
 <html>
-  <link rel="stylesheet" href="/Voice-Conversion/css/main.css">
+  <link rel="stylesheet" href="css/main.css">
 </html>
 
 ## Welcome to GitHub Page
