@@ -399,11 +399,11 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
     <tbody>
         <tr>
             <th>#2</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_small/9_bella.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_small/9_bella.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_small/9_bella.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_small/9_bella.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_tts_small/9_bella.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
