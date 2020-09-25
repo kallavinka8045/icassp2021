@@ -455,60 +455,354 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
 ## Seen speakers scenarios
 
 ### Single speaker
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Recording</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_seen_single/LJ001-0029.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_seen_single/LJ001-0029.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_seen_single/LJ001-0029.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_seen_single/LJ001-0029.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_seen_single/LJ001-0029.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_seen_single/LJ001-0029.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_seen_single/LJ028-0505.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_seen_single/LJ028-0505.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_seen_single/LJ028-0505.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_seen_single/LJ028-0505.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_seen_single/LJ028-0505.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_seen_single/LJ028-0505.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_seen_single/LJ050-0083.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_seen_single/LJ050-0083.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_seen_single/LJ050-0083.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_seen_single/LJ050-0083.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_seen_single/LJ050-0083.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_seen_single/LJ050-0083.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
 
 ### Multiple speakers
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Recording</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_seen_universal/2204_131732_000037_000002.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_seen_universal/2204_131732_000037_000002.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_seen_universal/F004_00077.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_seen_universal/2204_131732_000037_000002.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_seen_universal/2204_131732_000037_000002.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_seen_universal/2204_131732_000037_000002.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_seen_universal/2769_176256_000060_000007.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_seen_universal/2769_176256_000060_000007.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_seen_universal/2769_176256_000060_000007.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_seen_universal/2769_176256_000060_000007.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_seen_universal/2769_176256_000060_000007.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_seen_universal/2769_176256_000060_000007.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_seen_universal/7128_84122_000016_000004.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_seen_universal/7128_84122_000016_000004.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_seen_universal/7128_84122_000016_000004.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_seen_universal/7128_84122_000016_000004.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_seen_universal/7128_84122_000016_000004.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_seen_universal/7128_84122_000016_000004.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
 
 ## Unseen speakers and out-of-domain scenarios
 
 ### Clean, noisy and reverberant
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Recording</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Clean #1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>Clean #2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+        <tbody>
+        <tr>
+            <th>Noisy #1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_noisy/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_noisy/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_noisy/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_noisy/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_noisy/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_noisy/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>Noisy #2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_noisy/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_noisy/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_noisy/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_noisy/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_noisy/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_noisy/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+        <tbody>
+        <tr>
+            <th>Reverb #1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_reverberated/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_reverberated/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_reverberated/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_reverberated/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_reverberated/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_reverberated/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>Reverb #2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_reverberated/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_reverberated/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_reverberated/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_reverberated/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_reverberated/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_reverberated/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
 
 ### Expressive
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Recording</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_expressive/chp.01.mowgli_s_brothers.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_expressive/chp.01.mowgli_s_brothers.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_expressive/chp.01.mowgli_s_brothers.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_expressive/chp.01.mowgli_s_brothers.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_expressive/chp.01.mowgli_s_brothers.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_expressive/chp.01.mowgli_s_brothers.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_expressive/chp.02.kaa_s_hunting.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_expressive/chp.02.kaa_s_hunting.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_expressive/chp.02.kaa_s_hunting.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_expressive/chp.02.kaa_s_hunting.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_expressive/chp.02.kaa_s_hunting.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_expressive/chp.02.kaa_s_hunting.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_expressive/chp.03._tiger_tiger!_.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_expressive/chp.03._tiger_tiger!_.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_expressive/chp.03._tiger_tiger!_.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_expressive/chp.03._tiger_tiger!_.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_expressive/chp.03._tiger_tiger!_.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_expressive/chp.03._tiger_tiger!_.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#4</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_expressive/chp.07.the_diamond_mines_again.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_expressive/chp.07.the_diamond_mines_again.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_expressive/chp.07.the_diamond_mines_again.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_expressive/chp.07.the_diamond_mines_again.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_expressive/chp.07.the_diamond_mines_again.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_expressive/chp.07.the_diamond_mines_again.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#5</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_expressive/chp.09.melchisedec.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_expressive/chp.09.melchisedec.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_expressive/chp.09.melchisedec.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_expressive/chp.09.melchisedec.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_expressive/chp.09.melchisedec.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_expressive/chp.09.melchisedec.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#6</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_expressive/chp.10.the_indian_gentleman-2.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_expressive/chp.10.the_indian_gentleman-2.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_expressive/chp.10.the_indian_gentleman-2.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_expressive/chp.10.the_indian_gentleman-2.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_expressive/chp.10.the_indian_gentleman-2.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_expressive/chp.10.the_indian_gentleman-2.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
 
 ### Unseen languages
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Recording</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Spanish</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>German</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>French</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>Japanese</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>Chinese</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
 
 ## Text-to-speech
 
 ### LJSpeech
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Universal MelGAN</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_tts/0.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_tts/1.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_tts/8.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
 
 # Additional study
 
-## Korean TTS samples: Multi-band + AMP
+## Korean TTS samples: Multi-band + mixed precision
 (achieved 0.003 RTF on NVIDIA V100 GPU)
-
-## Welcome to GitHub Page
-
-You can use the [editor on GitHub](https://github.com/kallavinka8045/icassp2021/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kallavinka8045/icassp2021/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
