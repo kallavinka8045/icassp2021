@@ -783,6 +783,7 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
 </table>
 
 ## Text-to-speech
+We trained the single-speaker [Tacotron 2](https://ieeexplore.ieee.org/document/8461368) acoustic model with the [LJSpeech](https://keithito.com/LJ-Speech-Dataset/) dataset.
 
 ### LJSpeech
 <table>
