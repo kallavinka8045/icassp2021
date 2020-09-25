@@ -838,10 +838,6 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
     <thead>
         <th>Index</th>
         <th>Universal MelGAN</th>
-        <th>FB-MelGAN</th>
-        <th>WaveRNN</th>
-        <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -868,10 +864,6 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
     <thead>
         <th>Index</th>
         <th>Universal MelGAN</th>
-        <th>FB-MelGAN</th>
-        <th>WaveRNN</th>
-        <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
