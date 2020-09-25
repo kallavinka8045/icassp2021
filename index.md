@@ -814,7 +814,7 @@ We trained the single-speaker [Tacotron 2](https://ieeexplore.ieee.org/document/
 # Additional study
 
 ## Korean TTS samples: Multi-band + mixed precision
-(achieved 0.003 RTF on NVIDIA V100 GPU)
+This study achieved 0.003 RTF on a NVIDIA V100 GPU.
 
 ### Seen speakers with large set of training data(more than 30k utterances)
 <table>
