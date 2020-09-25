@@ -9,8 +9,8 @@
 In this paper, we propose Universal MelGAN: a robust waveform generation model for high-fidelity speech synthesis. The proposed model was improved as follows. 1) We increased the hidden channel sizes of the generator by 4 times and applied gated activation unit to the last layer of each residual stack. 2) To alleviate the over-smoothing problem in high frequency domain caused by the larger model size, we designed multi-resolution spectrogram discriminators and attached to the model. As a result, our model trained by hundreds of speakers recorded the best MOS score among the competing baselines in most seen and unseen domain scenarios such as speaker, language, recording condition or emotion in both Korean and English. In text-to-speech, high-fidelity audio was produced regardless of whether seen or unseen speakers(a real-time synthesis speed of 0.028 RTF on NVIDIA V100 GPU). This result obtained without any explicit domain information suggests the possibility of the proposed model as a universal vocoder.
 
 # Korean samples
-For Korean, each model was trained on studio-quality internal datasets with 62 speakers and 265k utterance.
-'Seen' or 'in-domain' indicates that the speaker or domain has been trained.
+For Korean, each model was trained on studio-quality internal datasets with 62 speakers and 265k utterance.  
+'Seen' or 'in-domain' indicates that the speaker or domain has been trained.  
 'Unseen' or 'out-of-domain' indicates that the speaker or domain has never been trained.
 
 ## Seen speakers scenarios
@@ -454,8 +454,8 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
 </table>
 
 # English samples
-For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech-Dataset/) and [LibriTTS](https://openslr.org/60/) with 905 speakers and 129k utterances for English.
-'Seen' or 'in-domain' indicates that the speaker or domain has been trained.
+For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech-Dataset/) and [LibriTTS](https://openslr.org/60/) datasets with 905 speakers and 129k utterances.  
+'Seen' or 'in-domain' indicates that the speaker or domain has been trained.  
 'Unseen' or 'out-of-domain' indicates that the speaker or domain has never been trained.
 
 ## Seen speakers scenarios
