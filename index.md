@@ -334,7 +334,7 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
 
 ## Multi-speaker text-to-speech
 
-### Trained with large datasets
+### Seen speakers with large set of training data(more than 30k utterances)
 <table>
     <thead>
         <th>Index</th>
@@ -376,7 +376,7 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
     </tbody>
 </table>
 
-### Trained with small datasets
+### Seen speakers with small set of training data(about 1000 utterances)
 <table>
     <thead>
         <th>Index</th>
@@ -418,7 +418,7 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
     </tbody>
 </table>
 
-### Unseen datasets
+### Unseen speakers
 <table>
     <thead>
         <th>Index</th>
@@ -806,3 +806,83 @@ In this paper, we propose Universal MelGAN: a robust waveform generation model f
 
 ## Korean TTS samples: Multi-band + mixed precision
 (achieved 0.003 RTF on NVIDIA V100 GPU)
+
+### Seen speakers with large set of training data(more than 30k utterances)
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Universal MelGAN</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_multiband_large/11_spring.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_multiband_large/9_ryan.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_multiband_large/6_naomi.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
+
+### Seen speakers with small set of training data(about 1000 utterances)
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_multiband_small/11_alice.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_multiband_small/11_bella.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_multiband_small/6_bentley.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
+
+### Unseen speakers
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Universal MelGAN</th>
+        <th>FB-MelGAN</th>
+        <th>WaveRNN</th>
+        <th>WaveGlow</th>
+        <th>WaveNet</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_multiband_small/11_aaron.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_multiband_small/6_anna.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
