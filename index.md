@@ -339,7 +339,7 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
 To evaluate this scenario, we trained the [JDI-T](https://arxiv.org/abs/2005.07799) acoustic model with duration, pitch and energy predictor.  
 Each trained vocoder was fine-tuned by 100k steps using the ground-truth waveform of the 'Large' set and the mel-spectrogram generated using the text, duration, pitch and energy of the ground-truth.
 
-### 'Large' set: Seen speakers with large set of training data(more than 30k utterances)
+### 'Large' set(trained and fine-tuned): Seen speakers with large set of training data(more than 30k utterances)
 <table>
     <thead>
         <th>Index</th>
@@ -381,7 +381,7 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
     </tbody>
 </table>
 
-### 'Small' set: Seen speakers with small set of training data(about 1000 utterances)
+### 'Small' set(trained but not fine-tuned): Seen speakers with small set of training data(about 1000 utterances)
 <table>
     <thead>
         <th>Index</th>
@@ -423,7 +423,7 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
     </tbody>
 </table>
 
-### 'Small' set: Unseen speakers
+### 'Small' set(not trained and not fine-tuned): Unseen speakers
 <table>
     <thead>
         <th>Index</th>
