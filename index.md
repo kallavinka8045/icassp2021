@@ -6,11 +6,11 @@
 # Abstract
 ![Image](figure1.png){: width="75%"}{: .center}
 ![Image](figure2.png){: width="85%"}{: .center}
-In this paper, we propose Universal MelGAN: a robust neural vocoder for high-fidelity speech synthesis. The proposed model has the following improvements based on the MelGAN architecture. 1) In order to generate waveforms of multiple  domains, all hidden channel sizes were increased by 4 times and the gated activation unit (GAU) was added to the last layer of each residual stack. 2) Multi-resolution spectrogram discriminators are connected to the model to alleviate the over-smoothing problem in the high frequency band caused by the previous improvement. As a result, our model trained by hundreds of speakers recorded the best MOS among the competing baselines in most seen and unseen domain scenarios such as speaker, language, recording condition or emotion in both Korean and English(a real-time synthesis speed of 0.028 RTF on NVIDIA V100 GPU). In multi-speaker text-to-speech, high-fidelity waveforms were generated regardless of whether seen or unseen. This result without any explicit domain information suggests the possibility of the proposed model as a universal vocoder.
+In this paper, we propose Universal MelGAN: a robust neural vocoder for high-fidelity speech synthesis. The proposed model has the following improvements based on the MelGAN architecture. 1) In order to generate waveforms in multiple  domains, all hidden channel sizes were increased by 4 times and the gated activation unit (GAU) was added to the last layer of each residual stack. 2) Multi-resolution spectrogram discriminators are connected to the model to alleviate the over-smoothing problem in the high frequency band caused by the previous improvement. As a result, our model trained by tens or hundreds of speakers recorded the best MOS among the competing baselines in most seen and unseen domain scenarios such as speaker, language, recording condition or emotion in both Korean and English(It has a real-time synthesis speed of 0.028 RTF on NVIDIA V100 GPU). In multi-speaker text-to-speech scenario, high-fidelity waveforms were generated regardless of whether seen or unseen. This results without any explicit domain information suggest the possibility of the proposed model as a universal vocoder.
 
 # Korean samples
-For Korean, each model was trained on studio-quality internal datasets with 62 speakers and 265k utterance.  
-'Seen' or 'in-domain' indicates that the speaker or domain has been trained.  
+For Korean, each model was trained on studio-quality internal datasets with 62 speakers and 265k utterances.  
+'Seen' or 'in-domain' indicates that the speaker or domain has been trained.
 'Unseen' or 'out-of-domain' indicates that the speaker or domain has never been trained.
 
 ## Seen speakers scenarios

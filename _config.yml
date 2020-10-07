@@ -4,7 +4,7 @@ markdown: kramdown
 kramdown:
   toc_levels: 1..2
 
-title: "Universal MelGAN: Improved Domain Robustness and High-Fidelity Neural Vocoder with Multi-Resolution Spectrogram Discriminators"
+title: "Universal MelGAN: Improving Domain Robustness and High-Fidelity Neural Vocoder with Multi-Resolution Spectrogram Discriminators"
 description: Won Jang<sup>1</sup>, Dan Lim<sup>2</sup>, Jaesam Yoon<sup>1</sup>
 address1: <sup>1</sup>Kakao Enterprise Corp., Seongnam, Korea
 address2: <sup>2</sup>Kakao Corp., Seongnam, Korea
