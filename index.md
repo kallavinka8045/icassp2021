@@ -497,7 +497,8 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-        </tr>
+        </tr> 
+    </tbody>
 </table>
 
 ### Expressive
