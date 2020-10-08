@@ -268,10 +268,9 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
 </table>
 
 ## Multi-speaker text-to-speech
-To evaluate this scenario, we trained the [JDI-T](https://arxiv.org/abs/2005.07799) acoustic model with duration, pitch and energy predictor.  
-Each trained vocoder was fine-tuned by 100k steps using the ground-truth waveform of the 'Large' set and the mel-spectrogram generated using the text, duration, pitch and energy of the ground-truth.
+To evaluate this scenario, we trained the [JDI-T](https://arxiv.org/abs/2005.07799) acoustic model with duration, pitch and energy predictor using a dataset with 4 speakers.
+Each trained vocoder was fine-tuned by 100k steps using the ground-truth waveform of the dataset and the mel-spectrogram generated using the text, duration, pitch and energy of the ground-truth.
 
-### 'Large' set(trained and fine-tuned): Seen speakers with large set of training data(more than 30k utterances)
 <table>
     <thead>
         <th>Index</th>
@@ -305,73 +304,6 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_large/6_naomi.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_large/6_naomi.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_large/6_naomi.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
-</table>
-
-### 'Small' set(trained but not fine-tuned): Seen speakers with small set of training data(about 1000 utterances)
-<table>
-    <thead>
-        <th>Index</th>
-        <th>Universal MelGAN</th>
-        <th>FB-MelGAN</th>
-        <th>WaveRNN</th>
-        <th>WaveGlow</th>
-    </thead>
-    <tbody>
-        <tr>
-            <th>#1</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_small/11_alice.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_small/11_alice.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_small/11_alice.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_small/11_alice.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-            <th>#2</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-            <th>#3</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_small/6_bentley.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_small/6_bentley.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_small/6_bentley.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_small/6_bentley.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
-</table>
-
-### 'Small' set(not trained and not fine-tuned): Unseen speakers
-<table>
-    <thead>
-        <th>Index</th>
-        <th>Universal MelGAN</th>
-        <th>FB-MelGAN</th>
-        <th>WaveRNN</th>
-        <th>WaveGlow</th>
-    </thead>
-    <tbody>
-        <tr>
-            <th>#1</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_small/11_aaron.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_small/11_aaron.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_small/11_aaron.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_small/11_aaron.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-            <th>#2</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_small/6_anna.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_small/6_anna.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_small/6_anna.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_small/6_anna.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -666,10 +598,59 @@ We trained the single-speaker [Tacotron 2](https://ieeexplore.ieee.org/document/
 
 # Additional study
 
+## Korean TTS samples: Predicted mel-spectrogram of unseen speakers
+
+### Trained but not fine-tuned speakers
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Universal MelGAN</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_small/11_alice.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_small/6_bentley.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
+
+### Not trained and not fine-tuned speakers
+<table>
+    <thead>
+        <th>Index</th>
+        <th>Universal MelGAN</th>
+    </thead>
+    <tbody>
+        <tr>
+            <th>#1</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_small/11_aaron.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#2</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_small/6_anna.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+</table>
+
+
 ## Korean TTS samples: Multi-band + mixed precision
 This study achieved 0.003 RTF on a NVIDIA V100 GPU.
 
-### 'Large' set(trained and fine-tuned): Seen speakers with large set of training data(more than 30k utterances)
+### Trained and fine-tuned speakers
 <table>
     <thead>
         <th>Index</th>
@@ -695,7 +676,7 @@ This study achieved 0.003 RTF on a NVIDIA V100 GPU.
     </tbody>
 </table>
 
-### 'Small' set(trained but not fine-tuned): Seen speakers with small set of training data(about 1000 utterances)
+### Trained but not fine-tuned speakers
 <table>
     <thead>
         <th>Index</th>
@@ -721,7 +702,7 @@ This study achieved 0.003 RTF on a NVIDIA V100 GPU.
     </tbody>
 </table>
 
-### 'Small' set(not trained and not fine-tuned): Unseen speakers
+### Not trained and not fine-tuned speakers
 <table>
     <thead>
         <th>Index</th>
