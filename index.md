@@ -13,7 +13,7 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
 'Seen' or 'in-domain' indicates that the speaker or domain has been trained.
 'Unseen' or 'out-of-domain' indicates that the speaker or domain has never been trained.
 
-## Seen speakers scenarios
+## Seen speakers: In-domain scenarios
 
 ### Single speaker
 <table>
@@ -99,9 +99,9 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
     </tbody>
 </table>
 
-## Unseen speakers and out-of-domain scenarios
+## Out-of-domain scenarios
 
-### Clean, noisy and reverberant
+### Unseen speakers
 <table>
     <thead>
         <th>Index</th>
@@ -113,7 +113,7 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
     </thead>
     <tbody>
         <tr>
-            <th>Clean #1</th>
+            <th>#1</th>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/gt/kor_ood_unseen_clean/F003_00117.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_ood_unseen_clean/F003_00117.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_unseen_clean/F003_00117.wav" type="audio/wav"></audio></td>
@@ -123,7 +123,7 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
     </tbody>
     <tbody>
         <tr>
-            <th>Clean #2</th>
+            <th>#2</th>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/gt/kor_ood_unseen_clean/M007_01000.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_ood_unseen_clean/M007_01000.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_unseen_clean/M007_01000.wav" type="audio/wav"></audio></td>
@@ -133,7 +133,7 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
     </tbody>
 </table>
 
-### Expressive
+### Expressive utterances
 <table>
     <thead>
         <th>Index</th>
@@ -381,7 +381,7 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
 'Seen' or 'in-domain' indicates that the speaker or domain has been trained.  
 'Unseen' or 'out-of-domain' indicates that the speaker or domain has never been trained.
 
-## Seen speakers scenarios
+## Seen speakers: In-domain scenarios
 
 ### Single speaker
 <table>
@@ -467,9 +467,9 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
     </tbody>
 </table>
 
-## Unseen speakers and out-of-domain scenarios
+## Out-of-domain scenarios
 
-### Clean, noisy and reverberant
+### Unseen speakers
 <table>
     <thead>
         <th>Index</th>
@@ -481,7 +481,7 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
     </thead>
     <tbody>
         <tr>
-            <th>Clean #1</th>
+            <th>#1</th>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
@@ -491,7 +491,7 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
     </tbody>
     <tbody>
         <tr>
-            <th>Clean #2</th>
+            <th>#2</th>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
@@ -501,7 +501,7 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
     </tbody>
 </table>
 
-### Expressive
+### Expressive utterances
 <table>
     <thead>
         <th>Index</th>
