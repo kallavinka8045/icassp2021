@@ -6,7 +6,7 @@
 # Abstract
 ![Image](figure1.png){: width="75%"}{: .center}
 ![Image](figure2.png){: width="85%"}{: .center}
-In this paper, we propose Universal MelGAN: a robust neural vocoder for high-fidelity speech synthesis. The proposed model has the following improvements based on the MelGAN architecture. 1) In order to generate waveforms in multiple  domains, all hidden channel sizes were increased by 4 times and the gated activation unit (GAU) was added to the last layer of each residual stack. 2) Multi-resolution spectrogram discriminators are connected to the model to alleviate the over-smoothing problem in the high frequency band caused by the previous improvement. As a result, our model trained by tens or hundreds of speakers recorded the best MOS among the competing baselines in most seen and unseen domain scenarios such as speaker, language, recording condition or emotion in both Korean and English(It has a real-time synthesis speed of 0.028 RTF on NVIDIA V100 GPU). In multi-speaker text-to-speech scenario, high-fidelity waveforms were generated regardless of whether seen or unseen. This results without any explicit domain information suggest the possibility of the proposed model as a universal vocoder.
+In this paper, we propose Universal MelGAN: a robust neural vocoder for high-fidelity speech synthesis. The proposed model has the following improvements based on the MelGAN architecture. 1) In order to increase generalization capabilities in multiple domains, all hidden channel sizes were increased by 4 times and the gated activation unit (GAU) was added to the last layer of each residual stack. 2) Multi-resolution spectrogram discriminators are connected to the model to alleviate the over-smoothing problem in the high frequency band caused by the previous improvement. As a result of the evaluation, our model trained by hundreds of speakers recorded the best MOS among the competing baselines in most in-domain, and out-of-domain scenarios such as speaker, expressive utterance and language. In a multi-speaker text-to-speech scenario, our model can generate high-fidelity waveforms that has achieved 4.22 MOS at a real-time synthesis speed of 0.028 RTF on a NVIDIA V100 GPU. This results without any explicit domain information suggest the possibility of the proposed model as a universal vocoder.
 
 # Korean samples
 For Korean, each model was trained on studio-quality internal datasets with 62 speakers and 265k utterances.  
@@ -24,7 +24,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -34,7 +33,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_seen_single/FTTS_dg21445.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_seen_single/FTTS_dg21445.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_seen_single/FTTS_dg21445.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_seen_single/FTTS_dg21445.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -45,7 +43,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_seen_single/FTTS_dw09691.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_seen_single/FTTS_dw09691.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_seen_single/FTTS_dw09691.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_seen_single/FTTS_dw09691.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -56,7 +53,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_seen_single/FTTS_dw10439.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_seen_single/FTTS_dw10439.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_seen_single/FTTS_dw10439.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_seen_single/FTTS_dw10439.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -70,7 +66,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -80,7 +75,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_seen_universal/F004_00077.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_seen_universal/F004_00077.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_seen_universal/F004_00077.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_seen_universal/F004_00077.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -91,7 +85,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_seen_universal/F006_00501.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_seen_universal/F006_00501.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_seen_universal/F006_00501.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_seen_universal/F006_00501.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -102,7 +95,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_seen_universal/M008_00968.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_seen_universal/M008_00968.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_seen_universal/M008_00968.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_seen_universal/M008_00968.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -118,7 +110,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -128,7 +119,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_unseen_clean/F003_00117.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_unseen_clean/F003_00117.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_unseen_clean/F003_00117.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_unseen_clean/F003_00117.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -139,51 +129,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_unseen_clean/M007_01000.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_unseen_clean/M007_01000.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_unseen_clean/M007_01000.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_unseen_clean/M007_01000.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
-        <tbody>
-        <tr>
-            <th>Noisy #1</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/gt/kor_ood_noisy/F003_00117.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_ood_noisy/F003_00117.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_noisy/F003_00117.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_noisy/F003_00117.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_noisy/F003_00117.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_noisy/F003_00117.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-            <th>Noisy #2</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/gt/kor_ood_noisy/M007_01000.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_ood_noisy/M007_01000.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_noisy/M007_01000.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_noisy/M007_01000.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_noisy/M007_01000.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_noisy/M007_01000.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
-        <tbody>
-        <tr>
-            <th>Reverb #1</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/gt/kor_ood_reverberated/F003_00117.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_ood_reverberated/F003_00117.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_reverberated/F003_00117.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_reverberated/F003_00117.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_reverberated/F003_00117.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_reverberated/F003_00117.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-            <th>Reverb #2</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/gt/kor_ood_reverberated/M007_01000.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_ood_reverberated/M007_01000.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_reverberated/M007_01000.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_reverberated/M007_01000.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_reverberated/M007_01000.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_reverberated/M007_01000.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -197,7 +142,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -207,7 +151,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_expressive/EK_00006.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_expressive/EK_00006.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_expressive/EK_00006.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_expressive/EK_00006.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -218,7 +161,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_expressive/acriil_ang_00002100.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_expressive/acriil_ang_00002100.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_expressive/acriil_ang_00002100.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_expressive/acriil_ang_00002100.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -229,7 +171,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_expressive/acriil_dis_00001215.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_expressive/acriil_dis_00001215.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_expressive/acriil_dis_00001215.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_expressive/acriil_dis_00001215.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -240,7 +181,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_expressive/acriil_fea_00002020.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_expressive/acriil_fea_00002020.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_expressive/acriil_fea_00002020.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_expressive/acriil_fea_00002020.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -251,7 +191,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_expressive/acriil_hap_00002002.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_expressive/acriil_hap_00002002.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_expressive/acriil_hap_00002002.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_expressive/acriil_hap_00002002.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -262,7 +201,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_expressive/acriil_sad_00000027.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_expressive/acriil_sad_00000027.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_expressive/acriil_sad_00000027.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_expressive/acriil_sad_00000027.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -276,7 +214,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -286,7 +223,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -297,7 +233,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -308,7 +243,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -319,7 +253,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -330,7 +263,6 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -347,7 +279,6 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -356,7 +287,6 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_large/11_spring.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_large/11_spring.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_large/11_spring.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_tts_large/11_spring.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -366,7 +296,6 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_large/9_ryan.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_large/9_ryan.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_large/9_ryan.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_tts_large/9_ryan.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -376,7 +305,6 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_large/6_naomi.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_large/6_naomi.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_large/6_naomi.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_tts_large/6_naomi.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -389,7 +317,6 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -398,7 +325,6 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_small/11_alice.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_small/11_alice.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_small/11_alice.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_tts_small/11_alice.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -408,7 +334,6 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_tts_small/11_bella.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -418,7 +343,6 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_small/6_bentley.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_small/6_bentley.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_small/6_bentley.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_tts_small/6_bentley.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -431,7 +355,6 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -440,7 +363,6 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_small/11_aaron.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_small/11_aaron.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_small/11_aaron.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_tts_small/11_aaron.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -450,7 +372,6 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_small/6_anna.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_small/6_anna.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_small/6_anna.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavenet/kor_tts_small/6_anna.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -471,7 +392,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -481,7 +401,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_seen_single/LJ001-0029.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_seen_single/LJ001-0029.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_seen_single/LJ001-0029.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_seen_single/LJ001-0029.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -492,7 +411,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_seen_single/LJ028-0505.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_seen_single/LJ028-0505.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_seen_single/LJ028-0505.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_seen_single/LJ028-0505.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -503,7 +421,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_seen_single/LJ050-0083.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_seen_single/LJ050-0083.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_seen_single/LJ050-0083.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_seen_single/LJ050-0083.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -517,7 +434,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -527,7 +443,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_seen_universal/2204_131732_000037_000002.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_seen_universal/2204_131732_000037_000002.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_seen_universal/2204_131732_000037_000002.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_seen_universal/2204_131732_000037_000002.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -538,7 +453,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_seen_universal/2769_176256_000060_000007.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_seen_universal/2769_176256_000060_000007.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_seen_universal/2769_176256_000060_000007.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_seen_universal/2769_176256_000060_000007.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -549,7 +463,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_seen_universal/7128_84122_000016_000004.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_seen_universal/7128_84122_000016_000004.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_seen_universal/7128_84122_000016_000004.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_seen_universal/7128_84122_000016_000004.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -565,7 +478,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -575,7 +487,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_clean/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -586,53 +497,7 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_clean/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
         </tr>
-    </tbody>
-        <tbody>
-        <tr>
-            <th>Noisy #1</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_noisy/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_noisy/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_noisy/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_noisy/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_noisy/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_noisy/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-            <th>Noisy #2</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_noisy/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_noisy/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_noisy/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_noisy/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_noisy/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_noisy/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
-        <tbody>
-        <tr>
-            <th>Reverb #1</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_reverberated/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_reverberated/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_reverberated/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_reverberated/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_reverberated/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_reverberated/1089_134686_000011_000003.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
-    <tbody>
-        <tr>
-            <th>Reverb #2</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/gt/eng_ood_reverberated/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_ours/eng_ood_reverberated/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_reverberated/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_reverberated/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_reverberated/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_reverberated/121_121726_000004_000003.wav" type="audio/wav"></audio></td>
-        </tr>
-    </tbody>
 </table>
 
 ### Expressive
@@ -644,7 +509,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -654,7 +518,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_expressive/chp.01.mowgli_s_brothers.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_expressive/chp.01.mowgli_s_brothers.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_expressive/chp.01.mowgli_s_brothers.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_expressive/chp.01.mowgli_s_brothers.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -665,7 +528,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_expressive/chp.02.kaa_s_hunting.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_expressive/chp.02.kaa_s_hunting.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_expressive/chp.02.kaa_s_hunting.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_expressive/chp.02.kaa_s_hunting.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -676,7 +538,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_expressive/chp.03._tiger_tiger!_.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_expressive/chp.03._tiger_tiger!_.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_expressive/chp.03._tiger_tiger!_.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_expressive/chp.03._tiger_tiger!_.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -687,7 +548,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_expressive/chp.07.the_diamond_mines_again.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_expressive/chp.07.the_diamond_mines_again.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_expressive/chp.07.the_diamond_mines_again.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_expressive/chp.07.the_diamond_mines_again.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -698,7 +558,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_expressive/chp.09.melchisedec.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_expressive/chp.09.melchisedec.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_expressive/chp.09.melchisedec.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_expressive/chp.09.melchisedec.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -709,7 +568,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_expressive/chp.10.the_indian_gentleman-2.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_expressive/chp.10.the_indian_gentleman-2.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_expressive/chp.10.the_indian_gentleman-2.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_expressive/chp.10.the_indian_gentleman-2.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -723,7 +581,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
         <th>FB-MelGAN</th>
         <th>WaveRNN</th>
         <th>WaveGlow</th>
-        <th>WaveNet</th>
     </thead>
     <tbody>
         <tr>
@@ -733,7 +590,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_languages/bailen_0033.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -744,7 +600,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_languages/meisterfloh_0657.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -755,7 +610,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_languages/lesmis_0204.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -766,7 +620,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_languages/meian_6532.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
     <tbody>
@@ -777,7 +630,6 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/melgan_orig/eng_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavernn/eng_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
             <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/waveglow/eng_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/eng/wavenet/eng_ood_unseen_languages/call_to_arms_0684.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
