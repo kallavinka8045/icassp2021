@@ -300,10 +300,19 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
     <tbody>
         <tr>
             <th>#3</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_large/6_naomi.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_large/6_naomi.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_large/6_naomi.wav" type="audio/wav"></audio></td>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_large/6_naomi.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_large/11_naomi.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_large/11_naomi.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_large/11_naomi.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_large/11_naomi.wav" type="audio/wav"></audio></td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <th>#3</th>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_large/6_nick.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_orig/kor_tts_large/6_nick.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/wavernn/kor_tts_large/6_nick.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/waveglow/kor_tts_large/6_nick.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
@@ -671,7 +680,7 @@ This study achieved 0.003 RTF on a NVIDIA V100 GPU.
     <tbody>
         <tr>
             <th>#3</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_multiband_large/6_naomi.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_multiband_large/11_naomi.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
