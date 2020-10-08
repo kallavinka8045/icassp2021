@@ -268,7 +268,7 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
 </table>
 
 ## Multi-speaker text-to-speech
-To evaluate this scenario, we trained the [JDI-T](https://arxiv.org/abs/2005.07799) acoustic model with duration, pitch and energy predictor using a dataset with 4 speakers.
+To evaluate this scenario, we trained the [JDI-T](https://arxiv.org/abs/2005.07799) acoustic model with duration, pitch and energy predictor using a dataset with 4 speakers.  
 Each trained vocoder was fine-tuned by 100k steps using the ground-truth waveform of the dataset and the mel-spectrogram generated using the text, duration, pitch and energy of the ground-truth.
 
 <table>
