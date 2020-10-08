@@ -680,7 +680,7 @@ This study achieved 0.003 RTF on a NVIDIA V100 GPU.
     <tbody>
         <tr>
             <th>#3</th>
-            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_multiband_large/11_naomi.wav" type="audio/wav"></audio></td>
+            <td><audio controls style="width: 150px;"><source src="wav_for_demo/kor/melgan_ours/kor_tts_multiband_large/6_naomi.wav" type="audio/wav"></audio></td>
         </tr>
     </tbody>
 </table>
