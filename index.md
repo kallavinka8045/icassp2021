@@ -10,10 +10,10 @@ We propose Universal MelGAN, a vocoder that synthesizes high-fidelity speech in 
 
 # Korean samples
 For Korean, each model was trained on studio-quality internal datasets with 62 speakers and 265k utterances.  
-'Seen' or 'in-domain' indicates that the speaker or domain has been trained.
-'Unseen' or 'out-of-domain' indicates that the speaker or domain has never been trained.
+'Seen' indicates that the domain has been trained.
+'Unseen' indicates that the domain has never been trained.
 
-## Seen speakers: In-domain scenarios
+## Seen speakers
 
 ### Single speaker
 <table>
@@ -99,7 +99,7 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
     </tbody>
 </table>
 
-## Out-of-domain scenarios
+## Unseen domains: speaker, emotion, language
 
 ### Unseen speakers
 <table>
@@ -268,8 +268,9 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
 </table>
 
 ## Multi-speaker text-to-speech
-To evaluate this scenario, we trained the [JDI-T](https://arxiv.org/abs/2005.07799) acoustic model with duration, pitch and energy predictor using a dataset with 4 speakers.  
-Each trained vocoder was fine-tuned by 100k steps using the ground-truth waveform of the dataset and the mel-spectrogram generated using the text, duration, pitch and energy of the ground-truth.
+To evaluate this scenario, we trained the [JDI-T](https://arxiv.org/abs/2005.07799) acoustic model with a pitch and energy predictor using a dataset with four speakers.
+Each trained vocoder was fine-tuned by 100k steps using a pair of the ground-truth waveforms and the predicted mel-spectrograms.
+Note that we prepared the predicted mel-spectrograms of JDI-T by using the text, reference duration, ground-truth pitch, and energy.
 
 <table>
     <thead>
@@ -319,10 +320,10 @@ Each trained vocoder was fine-tuned by 100k steps using the ground-truth wavefor
 
 # English samples
 For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech-Dataset/) and [LibriTTS](https://openslr.org/60/) datasets with 905 speakers and 129k utterances.  
-'Seen' or 'in-domain' indicates that the speaker or domain has been trained.  
-'Unseen' or 'out-of-domain' indicates that the speaker or domain has never been trained.
+'Seen' indicates that the domain has been trained.  
+'Unseen' indicates that the domain has never been trained.
 
-## Seen speakers: In-domain scenarios
+## Seen speakers
 
 ### Single speaker
 <table>
@@ -408,7 +409,7 @@ For English, each model was trained on [LJSpeech](https://keithito.com/LJ-Speech
     </tbody>
 </table>
 
-## Out-of-domain scenarios
+## Unseen domains: speaker, emotion, language
 
 ### Unseen speakers
 <table>
