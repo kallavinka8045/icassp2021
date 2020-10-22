@@ -10,7 +10,7 @@ We propose Universal MelGAN, a vocoder that synthesizes high-fidelity speech in 
 
 # Korean samples
 For Korean, each model was trained on studio-quality internal datasets with 62 speakers and 265k utterances.  
-'Seen' indicates that the domain has been trained.
+'Seen' indicates that the domain has been trained.  
 'Unseen' indicates that the domain has never been trained.
 
 ## Seen speakers
@@ -268,8 +268,8 @@ For Korean, each model was trained on studio-quality internal datasets with 62 s
 </table>
 
 ## Multi-speaker text-to-speech
-To evaluate this scenario, we trained the [JDI-T](https://arxiv.org/abs/2005.07799) acoustic model with a pitch and energy predictor using a dataset with four speakers.
-Each trained vocoder was fine-tuned by 100k steps using a pair of the ground-truth waveforms and the predicted mel-spectrograms.
+To evaluate this scenario, we trained the [JDI-T](https://arxiv.org/abs/2005.07799) acoustic model with a pitch and energy predictor using a dataset with four speakers.  
+Each trained vocoder was fine-tuned by 100k steps using a pair of the ground-truth waveforms and the predicted mel-spectrograms.  
 Note that we prepared the predicted mel-spectrograms of JDI-T by using the text, reference duration, ground-truth pitch, and energy.
 
 <table>
@@ -658,7 +658,7 @@ We trained the single-speaker [Tacotron 2](https://github.com/NVIDIA/tacotron2) 
 
 
 ## Korean TTS samples: Multi-band + mixed precision
-This study achieved 0.003 RTF on a NVIDIA V100 GPU.
+This study achieved 0.003 RTF on an NVIDIA V100 GPU.
 
 ### Trained and fine-tuned speakers
 <table>
